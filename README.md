@@ -5,7 +5,7 @@ In this repository you can see details about  **HTML,CSS,Flexbox,JavaSc,JavaScri
 
 ### To Use
 First of all you should start learning HTML for that you need to download VsCode[https://code.visualstudio.com/download] or any other editors. If you are using VsCode, you should install these extensions:
-Auto Rename Tag
+<br />Auto Rename Tag
 Live Server 
 PHP IntelliSense 
 Prettier - Code formatter
