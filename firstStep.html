@@ -1,85 +1,104 @@
 <!DOCTYPE html> <!-- declaration defines that this document is an HTML5 document -->
 <html> <!-- element is the root element of an HTML page-->
-  <head> <!-- element contains meta information about the HTML page -->
-    
-    <title>This is my first website </title> <!--describes the title of the web page -->
-    <meta charset="UTF-8">  <!--bu aradaki charset ya da name metanın attributeleridir-->
-    <meta name="keywords" content="Java, Python">
-    <meta name="description" content="This is my first website">
-    <meta name="author" content="herseydenazaz">
+<head> <!-- element contains meta information about the HTML page -->
 
-  </head>
-    <!--element defines a large heading-->
-    <h1>This is heading 1</h1> 
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <h4>This is heading 4</h4>
-    <h5>This is heading 5</h5>
-    <h6>This is heading 6</h6>
+  <title>This is my first website </title> <!--describes the title of the web page -->
+  <meta charset="UTF-8">  <!--bu aradaki charset ya da name metanın attributeleridir-->
+  <meta name="keywords" content="Java, Python">
+  <meta name="description" content="This is my first website">
+  <meta name="author" content="herseydenazaz">
 
-    <!--Block and inline elements-->
-    <div style="border: 3px solid black;">Hello World</div>
+</head>
 
-    <!--links, or "anchors", to other pages (inline)-->
-    <p>My first paragraph in <a href="http://www.google.com">google</a></p>
+<body style="background-color: rgb(192, 207, 235);">
 
-    <!--Block and inline elements-->
-    <div style="background-color:black;color:rgb(71, 223, 33);padding:20px;">Sultan</div>
-    
-    <!--paragraphs of text (block)-->
-    <p>This is an inline span <span style="border: 1px solid black;color:red">Hello World</span> element inside a paragraph.</p>
-    
-    <!--a lengthy quotation (block) Quotations <blockquote> -->
-    <blockquote>
-      <p>Fourscore and seven years ago, our fathers brought forth
-      on this continent a new nation, conceived in liberty, and
-      dedicated to the proposition that all men are created equal.</p>
-    </blockquote> 
+<!--element defines a large heading-->
+<h1 style="color: crimson;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">This is heading 1</h1>
+<h2 style="font-size: 30px">This is heading 2</h2>
+<h3> This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
 
-    <!--Inline quotations <q> -->
-    <!--Computer code <code> a short section of computer code (usually shown in a fixed-width font) -->
-    <!--Phrase elements : <em>, <strong> -->
-    <p> <em>Hello </em> <q> <strong>Hello</strong> </q> <code>Hello</code></p>
-    
-    <!--Preformatted text <pre>-->
-    <pre>Hello 
-      Hello 
+<!--adding image and if the picture can not show, it will write just flower-->
+<img src="https://addons-media.operacdn.com/media/CACHE/images/themes/95/78195/1.0-rev1/images/f1b54fe9-e138-44e6-929b-182bb1e82a68/e692a2c2fe07202eda545c69833230bd.jpg"
+     width="100" alt="flower">
+
+<!--if you want to add image from your pc -->
+<img src="./images/flower.jpg" alt="flower" width="200">
+
+<!-- if you want to do clikable image-->
+<a href="https://en.wikipedia.org/wiki/Flower" target="_blank"><img src="./images/flower.jpg" alt="flower" width="300"></a>
+
+<!--Block and inline elements-->
+<div style="border: 3px solid black;">Hello World</div>
+
+<!--links, or "anchors", to other pages (inline)-->
+<!-- target="_blank" means opening the new tab-->
+<p>My <mark>first</mark>  paragraph in <a href="http://www.google.com" target="_blank" title="Google link">google</a></p>
+
+<!--Block and inline elements-->
+<div style="background-color:black;color:rgb(71, 223, 33);padding:20px;">Sultan</div>
+
+<!--paragraphs of text (block)-->
+<p>This is an inline span <span style="border: 1px solid black;color:red">Hello World</span> element inside a paragraph.</p>
+
+<!--a lengthy quotation (block) Quotations <blockquote> -->
+<blockquote>
+  <p>Fourscore and seven years ago, our fathers brought forth
+    on this continent a new nation, conceived in liberty, and
+    dedicated to the proposition that all men are created equal.</p>
+</blockquote>
+
+<!--Inline quotations <q> -->
+<!--Computer code <code> a short section of computer code (usually shown in a fixed-width font) -->
+<!--Phrase elements : <em>, <strong> -->
+<p> <em>Hello </em> <q> <strong>Hello</strong> </q> <code>Hello</code></p>
+
+<!--Preformatted text <pre>-->
+<pre>Hello
+      Hello
     </pre>
 
-    <!--Line break: <br>-->
-    <p>Hello Hello <br>Hello<br> Hello</p>
+<!--Line break: <br>-->
+<p>Hello Hello <br>Hello<br> Hello</p>
 
-    <!--Deletions and insertions: <del>, <ins> -->
-    <p>
-      Hello Hello <del>Hello</del> <ins>Hello Hello</ins>
-    </p>
+<!--Deletions and insertions: <del>, <ins> -->
+<p>
+  Hello Hello <del>Hello</del> <ins>Hello Hello</ins>
+</p>
 
-    <!--Abbreviations: <abbr> -->
-    <p>Hello Hello Hello  
-      <abbr title="Hello What's up ">HWU</abbr> Hello</p>
-    
-    <!--Unordered list: <ul>, <li>  -->
-    <!--ul represents a bulleted list of items (block) -->  
-    <!--li represents a single item within the list (block) -->
-    <ul>
-      <li>Hello</li>
-      <li>Hello</li>
-    </ul>
+<!--Abbreviations: <abbr> -->
+<p>Hello Hello Hello
+  <abbr title="Hello What's up ">HWU</abbr> Hello</p>
 
-    <!--Ordered list <ol> -->
-    <ol>
-      <li>Hello</li>
-      <li>Hello</li>
-    </ol>
+<!--Unordered list: <ul>, <li>  -->
+<!--ul represents a bulleted list of items (block) -->
+<!--li represents a single item within the list (block) -->
+<ul>
+  <li>Hello</li>
+  <li>Hello</li>
+</ul>
 
-    <!--Definition list <dl>, <dt>, <dd> -->
-    <!--dl represents a list of definitions of terms -->
-    <!--dt represents each term, and dd its definition -->
-    <dl>
-      <dt>Hello</dt> <dd>Hello Hello </dd> <dt>Hello</dt> <dd>Hello Hello</dd>
-    </dl>
-        
-  </body>
-  
+<!--straight line-->
+<hr>
+
+<!--Ordered list <ol> -->
+<ol>
+  <li>Hello</li>
+  <li>Hello</li>
+</ol>
+
+<!--Definition list <dl>, <dt>, <dd> -->
+<!--dl represents a list of definitions of terms -->
+<!--dt represents each term, and dd its definition -->
+<dl>
+  <dt>Hello</dt> <dd>Hello Hello </dd> <dt>Hello</dt> <dd>Hello Hello</dd>
+</dl>
+
+</body>
+
 </html>
+
+
 
