@@ -2,11 +2,18 @@
 <html> <!-- element is the root element of an HTML page-->
 <head> <!-- element contains meta information about the HTML page -->
 
-  <title>This is my first website </title> <!--describes the title of the web page -->
-  <meta charset="UTF-8">  <!--bu aradaki charset ya da name metanın attributeleridir-->
-  <meta name="keywords" content="Java, Python">
-  <meta name="description" content="This is my first website">
-  <meta name="author" content="herseydenazaz">
+    <title>This is my first website </title> <!--describes the title of the web page -->
+    <meta charset="UTF-8">  <!--bu aradaki charset ya da name metanın attributeleridir-->
+    <meta name="keywords" content="Java, Python">
+    <meta name="description" content="This is my first website">
+    <meta name="author" content="herseydenazaz">
+
+    <!-- css will help us to view-->
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
 
 </head>
 
@@ -45,9 +52,9 @@
 
 <!--a lengthy quotation (block) Quotations <blockquote> -->
 <blockquote>
-  <p>Fourscore and seven years ago, our fathers brought forth
-    on this continent a new nation, conceived in liberty, and
-    dedicated to the proposition that all men are created equal.</p>
+    <p>Fourscore and seven years ago, our fathers brought forth
+        on this continent a new nation, conceived in liberty, and
+        dedicated to the proposition that all men are created equal.</p>
 </blockquote>
 
 <!--Inline quotations <q> -->
@@ -65,36 +72,82 @@
 
 <!--Deletions and insertions: <del>, <ins> -->
 <p>
-  Hello Hello <del>Hello</del> <ins>Hello Hello</ins>
+    Hello Hello <del>Hello</del> <ins>Hello Hello</ins>
 </p>
 
 <!--Abbreviations: <abbr> -->
 <p>Hello Hello Hello
-  <abbr title="Hello What's up ">HWU</abbr> Hello</p>
+    <abbr title="Hello What's up ">HWU</abbr> Hello</p>
 
 <!--Unordered list: <ul>, <li>  -->
 <!--ul represents a bulleted list of items (block) -->
 <!--li represents a single item within the list (block) -->
-<ul>
-  <li>Hello</li>
-  <li>Hello</li>
+<ul type="circle">
+    <li>Hello</li>
+    <ul>
+        <li>React</li>
+        <li>Vue</li>
+    </ul>
+    <li>Hello</li>
 </ul>
 
 <!--straight line-->
 <hr>
 
 <!--Ordered list <ol> -->
-<ol>
-  <li>Hello</li>
-  <li>Hello</li>
+<ol type="A">
+    <li>Hello</li>
+    <li>Hello</li>
 </ol>
 
 <!--Definition list <dl>, <dt>, <dd> -->
 <!--dl represents a list of definitions of terms -->
 <!--dt represents each term, and dd its definition -->
 <dl>
-  <dt>Hello</dt> <dd>Hello Hello </dd> <dt>Hello</dt> <dd>Hello Hello</dd>
+    <dt>Hello</dt> <dd>Hello Hello </dd> <dt>Hello</dt> <dd>Hello Hello</dd>
 </dl>
+
+<!--Adding table-->
+<table>
+
+    <!--also you can write table headers inside thead-->
+    <thead>
+    <tr> <!--table row-->
+        <th>Name</th> <!--row header-->
+        <th>Departman</th>
+        <th>Salary</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <!-- You can write like that-->
+    <tr> <!--table row-->
+        <th>Name</th> <!--row header-->
+        <th>Departman</th>
+        <th>Salary</th>
+    </tr>
+
+    <tr>
+        <td>Sultan</td> <!--row value-->
+        <td>Bilişim</td>
+        <td>5000</td>
+    </tr>
+
+    <tr>
+        <td>Sultan</td> <!--row value-->
+        <td>Bilişim</td>
+        <td>5000</td>
+    </tr>
+    <tr>
+        <td>Sultan</td> <!--row value-->
+        <td>Bilişim</td>
+        <td>5000</td>
+    </tr>
+
+</table>
+</tbody>
+
+
 
 </body>
 
