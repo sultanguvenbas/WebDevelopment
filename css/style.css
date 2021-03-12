@@ -1,3 +1,45 @@
-h1{
-    color: blue;
+h1{ /* we select all h1 */
+    color: blue !important ;
+    color: red;
+}
+
+#h2{ /* we select id with using # and add new stills */
+    color: brown;
+}
+
+.info{  /*  this tiem we select class with using . */
+    background: burlywood;
+}
+
+/* or we can select 2 things like id and class same time like
+#h2, .info{
+    background: burlywood;
+}
+*/
+
+/* this time we select just one thing */
+#p1.info{
+    background: rgb(245, 2, 204);
+}
+
+/* a{  we select all a
+   text-decoration: none;
+}*/
+
+/* or we can select a */
+
+ul li a{ /* here we just select under the ul li  */
+    text-decoration: none;
+    color: rgb(34, 14, 5);
+}
+
+/*
+*{
+    this time we select all things inside the website
+}*/
+
+
+
+.box-2{
+    background: seagreen;
 }
