@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Desing and Media Queries</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap; /* do not forget to type this */
+        }
+
+        .box{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #f2f2f2;
+            width: 25%;
+        }
+
+        /* p{
+            display: none;
+        } */
+
+        body{
+            background-color: red;
+        }
+        /* tablet */
+        @media (max-width: 768px) { /*  if website size decrease the 768px background color will change*/
+            body{
+                background-color: darkorange;
+            }
+            .box{
+                width: 50%;
+            }
+        }
+        /* phone */
+        @media (max-width: 500px) {
+            body{
+                background-color: #001aff;
+            }
+            .box{
+                width: 100%;
+            }
+        }
+        /* @media (min-width: 768px) { /* firstly it will work until 768px
+            p{
+                display: block;
+            }
+        }
+       */
+    </style>
+</head>
+<body>
+    <!-- <p >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quo!
+    </p> -->
+
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 4</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+</html>
