@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <title>Responsive Units</title>
 
+    <style>
+
+        /*div{*/
+        /*    font-size: 1.5em; !* font size will be 16px * 1.5 = 24px *!*/
+        /*    !*width: 40vw;!* we can say that x axis for page *!*!*/
+        /*    !*height: 10vh; !*  y axis for page *!*!*/
+        /*    background-color: #d23434;*/
+        /*}*/
+
+        /*p{*/
+        /*    font-size: 1.5em; !* this time font size will be 36px *!*/
+        /*    !* font-size: 1.5rem; *! !* font size will be 24px it will come from parent html*!*/
+        /*    padding: 1.5em; !* but, for padding part it will take the as a parent paragraf *!*/
+        /*}*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .backgroung{
+            background: url("./images/flower.jpg") center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #3277ac;
+            padding: 10rem; /* 160px */
+        }
+        h1{
+            margin-bottom: 1rem; /* 16px */
+            font-size: 3rem; /* 48px */
+
+        }
+        p{
+            font-size: 2rem; /* 32rem */
+            letter-spacing: 2px;
+        }
+        
+        @media (max-width: 500px) {
+            h1{
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    </style>
+
     <!-- Responsive Units
     em, rem, %, vm, vh -->
 </head>
 <body>
+<!--   <div>-->
+<!--       <p>-->
+<!--           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, deserunt.-->
+
+<!--       </p>-->
+<!--   </div>-->
+
+    <div class="backgroung" >
+        <h1>Welcome To The Site</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil.</p>
+    </div>
 
 </body>
 </html>
