@@ -13,3 +13,10 @@
 #traning .items .item{
     width: 100%;
 }
+.courses .course{
+    flex-direction: column;
+}
+.courses .courses .course-image img{
+    width: 100px;
+    height: 100px;
+}
