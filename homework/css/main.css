@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    /*color: white;*/
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navbar Section */
+#navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 95px;
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+#navbar ul li a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+#navbar-menu{
+    display: flex;
+    justify-content: end;
+}
+
+
+#navbar .user-menu .user-menu_items .user-menu_item .user-menu_link{
+    padding: 1rem;
+
+}
+
+.user-menu_link .user-menu_icon{
+    color: #ef3d07;
+    display: flex;
+    justify-content: center;
+}
+.user-menu_icon .fa-shipping-fast{
+    height: 1rem;
+    width: 1rem;
+}
+.user-menu_title{
+    color: black;
+    display: block;
+    font-size: .875rem;
+    padding-top: 5px;
+}
+
+hr{
+    background: #0e304e;
+    height: 1rem;
+}
+
+
+
