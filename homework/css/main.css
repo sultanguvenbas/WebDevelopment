@@ -67,5 +67,11 @@ hr{
     height: 1rem;
 }
 
+.container mt-3 .card-deck .card .card-body .card-text p span{
+    background: red;
+    padding: 0.25rem;
+    color: white;
+    border-radius: 4px;
+}
 
 
