@@ -20,7 +20,7 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 0 0.75rem;
-    height: 95px;
+    height: 80px;
 }
 #navbar ul{
     list-style-type: none;
@@ -40,38 +40,66 @@ html{
     justify-content: end;
 }
 
-
 #navbar .user-menu .user-menu_items .user-menu_item .user-menu_link{
     padding: 1rem;
-
+    position: relative;
 }
 
-.user-menu_link .user-menu_icon{
+.user-menu_items .truck{
     color: #ef3d07;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 42px;
 }
-.user-menu_icon .fa-shipping-fast{
-    height: 1rem;
-    width: 1rem;
+.user-menu_items .uye{
+    color: #ef3d07;
+    position: absolute;
+    top: 20px;
+    left: 25px;
 }
+
+.user-menu_items .basket{
+    color: #ef3d07;
+    position: absolute;
+    top: 20px;
+    left: 33px;
+}
+
 .user-menu_title{
     color: black;
     display: block;
     font-size: .875rem;
     padding-top: 5px;
+    margin-top: 20px;
 }
 
 hr{
     background: #0e304e;
     height: 1rem;
 }
-
-.container mt-3 .card-deck .card .card-body .card-text p span{
-    background: red;
-    padding: 0.25rem;
-    color: white;
-    border-radius: 4px;
+.card-deck :hover{
+    border-color: white;
+    z-index: 1;
 }
+.discount-span {
+    background: red;
+    padding: 0.20rem;
+    color: white;
+    border-radius: 3px;
+}
+.card-body{
+    position: relative;
+}
+.card-body .ucretsiz-teslimat{
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+.middle-container{
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 4rem;
+}
+@media (max-width: 958px){
 
-
+}
