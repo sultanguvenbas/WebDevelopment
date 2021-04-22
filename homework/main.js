@@ -9,27 +9,87 @@ let products = [
     inCart:0
   },
   {
-    name: 'Flower2',
-    tag:'flower2',
-    price:15,
+    name: 'Doğal Ahşap Kütükte Papatya Aranjmanı',
+    tag:'Doğal Ahşap Kütükte Papatya Aranjmanı',
+    price:49,
     inCart:0
   },
   {
-    name: 'Flower3',
-    tag:'flower3',
-    price:15,
+    name: 'Pembe Rüyalar Karanfil Aranjmanı',
+    tag:'Pembe Rüyalar Karanfil Aranjmanı',
+    price:79,
     inCart:0
   },
   {
-    name: 'Flower4',
-    tag:'flower4',
-    price:15,
+    name: 'Orkideler',
+    tag:'Orkideler',
+    price:64,
     inCart:0
   },
   {
-    name: 'Flower5',
-    tag:'flower5',
-    price:15,
+    name: 'Papatya Karnavalı',
+    tag:'Papatya Karnavalı',
+    price:69,
+    inCart:0
+  },
+  {
+    name: 'Lilyum Aranjmanı',
+    tag:'Lilyum Aranjmanı',
+    price:74,
+    inCart:0
+  },
+  {
+    name: 'Aşk Pembesi Gerberalar',
+    tag:'Aşk Pembesi Gerberalar',
+    price:59,
+    inCart:0
+  },
+  {
+    name: 'Sevgi Bahçesi 11 Kırmızı Gül',
+    tag:'Sevgi Bahçesi 11 Kırmızı Gül',
+    price:79,
+    inCart:0
+  },
+  {
+    name: 'Kütükte Çiçek Bahçesi',
+    tag:'Kütükte Çiçek Bahçesi',
+    price:59,
+    inCart:0
+  },
+  {
+    name: 'Papatya Bahçesi',
+    tag:'Papatya Bahçesi',
+    price:65,
+    inCart:0
+  },
+  {
+    name: '9 Beyaz Gül Aranjmanı',
+    tag:'9 Beyaz Gül Aranjmanı',
+    price:79,
+    inCart:0
+  },
+  {
+    name: 'Doğal Ahşap Kütükte Renkli Papatya Aranjmanı',
+    tag:'Doğal Ahşap Kütükte Renkli Papatya Aranjmanı',
+    price:59,
+    inCart:0
+  },
+  {
+    name: '2 Dal Beyaz Orkide Çiçeği',
+    tag:'2 Dal Beyaz Orkide Çiçeği',
+    price:139,
+    inCart:0
+  },
+  {
+    name: 'Kar Beyaz Gül ve Lilyum',
+    tag:'Kar Beyaz Gül ve Lilyum',
+    price:129,
+    inCart:0
+  },
+  {
+    name: 'Bahar Büyüsü Sarı Gerberalar',
+    tag:'Bahar Büyüsü Sarı Gerberalar',
+    price:59,
     inCart:0
   }
 ];
