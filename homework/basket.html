@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flower.com</title>
+  <!-- Adding Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!--  to keep same file inside a document  -->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Tablet -->
+  <link rel="stylesheet" media="(max-width:768px)" href="./css/tablet.css">
+
+  <!-- Mobile -->
+  <link rel="stylesheet" media="(max-width:500px)" href="./css/mobile.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="container navbar-container">
+    <nav id="navbar" class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./images/flower.jpg" alt="" width="40" height="30" class="d-inline-block align-text-top">
+        Flower
+      </a>
+      <form class="d-flex">
+        <input class="form-control mr-sm-2 " type="search" placeholder="Ürün Ara" aria-label="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+      </form>
+      <div id="navbar-menu" class="user-menu">
+        <ul class="user-menu_items">
+          <li class="user-menu_item">
+            <a class="user-menu_link " href="#">
+              <span class="user-menu_icon "><i class="truck fas fa-shipping-fast"></i></i></span>
+              <span class="user-menu_title">Sipariş Takibi</span>
+            </a>
+          </li>
+
+          <li class="user-menu_item">
+            <a class="user-menu_link " href="#">
+              <span class="user-menu_icon "><i class="uye far fa-user-circle"></i></span>
+              <span class="user-menu_title">Üyelik</span>
+            </a>
+
+          <li class="user-menu_item">
+            <a class="user-menu_link" href="#">
+              <span class="user-menu_icon "><i class="basket fas fa-cart-arrow-down"></i></span>
+              <span class="user-menu_title">Sepetim <span class="badge badge-light">0</span></span>
+            </a>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <hr>
+</header>
+
+<div class="products-container">
+  <div class="product-header">
+    <h5 class="product-title">Product</h5>
+    <h5 class="price">Price</h5>
+    <h5 class="quantity">Quantity</h5>
+    <h5 class="total">Total</h5>
+  </div>
+  <div class="products">
+
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

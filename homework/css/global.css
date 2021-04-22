@@ -4,3 +4,31 @@
     margin: 0;
     width: 100%;
 }
+/* Forms */
+.form-group{
+    padding: 0.25rem 0;
+}
+.form-group label{
+    display: block;
+}
+.form-control{
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none; /* mesaj kutusunun sabit kalmasını saglayacak*/
+    border-radius: 5px;
+}
+.submit-button{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px;
+}
+.submit-button:hover{
+    color: black;
+    background: white;
+    border: 3px solid #5b7dd5;
+}
+

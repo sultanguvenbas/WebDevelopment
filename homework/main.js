@@ -2,24 +2,36 @@ console.log("Running");
 let carts= document.querySelectorAll('.add-cart');
 
 let products = [
-{
-  name: 'Flower1',
-  tag:'flower1',
-  price:15,
-  inCart:0
-},
-{
+  {
+    name: '7 Kırmızı Gül',
+    tag:'7 Kırmızı Gül',
+    price:69,
+    inCart:0
+  },
+  {
     name: 'Flower2',
     tag:'flower2',
     price:15,
     inCart:0
-},
-{
-  name: 'Flower3',
+  },
+  {
+    name: 'Flower3',
     tag:'flower3',
-  price:15,
-  inCart:0
-}
+    price:15,
+    inCart:0
+  },
+  {
+    name: 'Flower4',
+    tag:'flower4',
+    price:15,
+    inCart:0
+  },
+  {
+    name: 'Flower5',
+    tag:'flower5',
+    price:15,
+    inCart:0
+  }
 ];
 
 for(let i=0; i < carts.length; i++){
@@ -35,7 +47,7 @@ function onLoadCartNumbers() {
   //check local storage
   let productNumbers=localStorage.getItem('cardNumbers');
   if (productNumbers){
-    document.querySelector('.cart span').textContent =productNumbers;
+    document.querySelector('.user-menu_title span').textContent =productNumbers;
   }
 }
 
@@ -49,13 +61,14 @@ function cardNumbers(product) {
 
   if(productNumbers ){
     localStorage.setItem('cardNumbers',productNumbers + 1);
-    document.querySelector('.cart span').textContent =productNumbers + 1;
+    document.querySelector('.user-menu_title span').textContent =productNumbers + 1;
   }else {
     localStorage.setItem('cardNumbers', 1);
-    document.querySelector('.cart span').textContent =1;
+    document.querySelector('.user-menu_title span').textContent =1;
   }
   setItems(product);
 }
+
 function setItems(product) {
   // console.log('inside of function',product);
 
@@ -112,15 +125,13 @@ function displayCart() {
       productContainer.innerHTML += `
       <div class="product">
         <ion-icon name="close-circle"></ion-icon>
-        <img src="${item.tag}.jpg">
+        <img src="./images/${item.tag}.png">
         <span >${item.name}</span>
        </div>
        <div class="price">$${item.price},00 </div>
        <div class="quantity">
-        <ion-icon class="decrease" name="arrow-dropleft-circle"></ion-icon>
         <span>${item.inCart}</span>
-        <ion-icon class="increase" name="arrow-dropright-circle"></ion-icon>
-       </div>
+        </div>
        <div class="total">
            $${item.inCart * item.price},00
        </div>
@@ -135,5 +146,6 @@ function displayCart() {
     `
   }
 }
-onLoadCartNumbers(); //every reflesh the page will check localstorage
+
+onLoadCartNumbers();
 displayCart();

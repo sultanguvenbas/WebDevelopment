@@ -64,6 +64,12 @@ html{
     top: 20px;
     left: 33px;
 }
+.user-menu_title span{
+    position: absolute;
+    top: 10px;
+    left: 48px;
+    background-color: #dcd1d1;
+}
 
 .user-menu_title{
     color: black;
@@ -103,11 +109,109 @@ hr{
 .form-inline{
     width: fit-content;
 }
- header div nav form .form-control{
+header div nav form .form-control{
      width: 30rem;
      margin-right: 5px;
 
  }
-@media (max-width: 958px){
+/* --------------------- Cart Page -------------------- */
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.products-container ion-icon{
+    font-size: 25px;
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
 
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+.product-title{
+    width: 45%;
+}
+.price{
+    width: 15%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+.product{
+    width: 45%;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products img{
+    width: 75px;
+}
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTotalTitle{
+    width: 30%;
+}
+.basketTotalTotal{
+    width: 15%;
+}
+
+
+
+
+/* Contact */
+#contact{
+    color: white;
+    padding: 1rem;
+}
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+#contact .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center; /*  align items kullanmadık çünkü width kısıyordu*/
+}
+#contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+}
+#contact .contact-form ul li a:hover{
+    opacity: 0.8;
 }
